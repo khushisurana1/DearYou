@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DearYou | A Home for Words</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">DearYou</div>
+
+    <nav>
+      <a href="#discover">Discover</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#library">My Library</a>
+      <a href="#explore">Explore</a>
+    </nav>
+
+    <div class="right-controls">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <div class="menu-icon" id="menuIcon">☰</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Where words<br>feel like home</h1>
+      <p>A warm digital sanctuary for readers, writers, and quiet hearts.</p>
+      <button>Start Reading</button>
+    </div>
+  </section>
+
+  <!-- DISCOVER -->
+  <section id="discover" class="section">
+    <h2>Discover</h2>
+    <div class="discover-grid">
+      <div class="discover-card">
+        <h3>Daily Poetry</h3>
+        <p>Verses to sit with your coffee and your feelings.</p>
+      </div>
+      <div class="discover-card">
+        <h3>Short Reads</h3>
+        <p>Stories you can finish before the world interrupts.</p>
+      </div>
+      <div class="discover-card">
+        <h3>Author Corners</h3>
+        <p>Explore minds that shaped literature and language.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POETRY -->
+  <section id="poetry" class="section alt">
+    <h2>Poetry We Love</h2>
+
+    <div class="poetry-grid">
+      <div class="poem-card">
+        <p>“And here you are living,<br>despite it all.”</p>
+        <span>— Rupi Kaur</span>
+      </div>
+
+      <div class="poem-card">
+        <p>“Tell me, what is it you plan to do<br>with your one wild and precious life?”</p>
+        <span>— Mary Oliver</span>
+      </div>
+
+      <div class="poem-card">
+        <p>“I took a deep breath and listened<br>to the old brag of my heart.”</p>
+        <span>— Sylvia Plath</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY LIBRARY -->
+  <section id="library" class="section">
+    <h2>My Library</h2>
+
+    <div class="library-grid">
+      <div class="library-card">
+        <h3>Currently Reading</h3>
+        <ul>
+          <li>The Bell Jar</li>
+          <li>Milk and Honey</li>
+        </ul>
+      </div>
+
+      <div class="library-card">
+        <h3>Wishlist</h3>
+        <input type="text" id="bookInput" placeholder="Add a book you want to read..." />
+        <button id="addBook">Add</button>
+        <ul id="wishlist"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section id="explore" class="section alt">
+    <h2>Read Online</h2>
+
+    <div class="links-grid">
+      <a href="https://www.poetryfoundation.org/" target="_blank">Poetry Foundation</a>
+      <a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a>
+      <a href="https://archive.org/" target="_blank">Internet Archive</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>DearYou- built for soft hearts & sharp minds.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
