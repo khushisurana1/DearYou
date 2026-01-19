@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-btn {
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.hero button {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  color: #ff4d6d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.3rem;
+}
+
+.alt {
+  background: #fff2f6;
+}
+
+/* DISCOVER */
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.discover-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* POETRY */
+.poetry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.poem-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  font-style: italic;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.poem-card span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* LIBRARY */
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.library-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.library-card input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.library-card button {
+  padding: 0.6rem 2rem;
+  border: none;
+  background: #ff4d6d;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.library-card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+/* LINKS */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.links-grid a {
+  padding: 1.5rem;
+  background: #fff;
+  text-align: center;
+  text-decoration: none;
+  color: #ff4d6d;
+  font-weight: bold;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+  background: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background: #121212;
+  color: #f2f2f2;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background: #1c1c1c;
+}
+
+.dark-mode .section,
+.dark-mode .alt {
+  background: #181818;
+}
+
+.dark-mode .discover-card,
+.dark-mode .poem-card,
+.dark-mode .library-card,
+.dark-mode .links-grid a {
+  background: #1f1f1f;
+  color: #f2f2f2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
